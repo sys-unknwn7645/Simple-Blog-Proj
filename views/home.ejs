@@ -1,0 +1,21 @@
+<!--
+Blog Post Project using EJS and MongoDB
+Udemy Course: The Complete 2023 Web Developement Bootcamp
+Acknowledgement: Angela Yu (App Brewery)
+By: sys-unknwn7645
+-->
+
+<%- include('./partials/header') -%>
+    <div class="py-3 mb-2">
+    <h2>Home</h2>
+    <p><%=homeStartingContent%></p>
+
+    <h2>Latest Post</h2>
+
+    <% for (let i = postArray.length-1; i >=0; i--) { %>
+        <h3><%=postArray[i].title%></h3>
+        <p class="posts"><%=postArray[i].post.substring(0,150)%><a href="/post/<%=postArray[i].title%>"> ... Read More</a></p>
+        
+    <%  } %>
+    </div>
+<%- include('./partials/footer') -%>

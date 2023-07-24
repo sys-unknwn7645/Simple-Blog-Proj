@@ -1,0 +1,1 @@
+This project makes a blog post webpage. It using EJS and MongoDB. Udemy Course: The Complete 2023 Web Developement Bootcamp Acknowledgement: Angela Yu (App Brewery).

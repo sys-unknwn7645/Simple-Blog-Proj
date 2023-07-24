@@ -1,0 +1,16 @@
+<!--
+Blog Post Project using EJS and MongoDB
+Udemy Course: The Complete 2023 Web Developement Bootcamp
+Acknowledgement: Angela Yu (App Brewery)
+By: sys-unknwn7645
+-->
+
+<%- include('./partials/header') -%>
+
+    <h1><%=postArray.title%></h1>
+    <p><%=postArray.post%></p>
+    
+    <form action="/delete" method="post">
+        <button type="submit" class="btn btn-primary" name="title" value="<%=postArray.title%>">Delete</button>
+    </form>
+<%- include('./partials/footer') -%>
